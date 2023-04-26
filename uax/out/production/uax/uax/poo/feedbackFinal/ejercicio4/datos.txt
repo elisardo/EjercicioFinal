@@ -1,0 +1,6 @@
+Nombre,Edad,Altura
+Elisardo,100,1.80
+Maria,65,1.70
+Antonio,45,1.20
+Esther,60,1.60
+Cristina,70,1.75

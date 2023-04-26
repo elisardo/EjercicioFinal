@@ -1,0 +1,6 @@
+Ejemplo JAX-RS
+
+Aquí tenéis el ejercicio de demo que hicimos en el Webinar de la Unidad 6 en referencia con servicios Rest.
+
+
+Haga clic en JAX-RS.zip para ver el archivo.

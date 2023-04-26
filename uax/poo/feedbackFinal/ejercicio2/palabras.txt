@@ -1,0 +1,5 @@
+Este es fichero origen del ejercicio2
+del feedback Final.
+UAX  Programacion Orientada a Objetos
+Un saludo.
+Elisardo Alvarez

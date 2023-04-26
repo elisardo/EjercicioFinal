@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <runtime name="Tomcat 10.1"/>
+  <fixed facet="jst.web"/>
+  <fixed facet="jst.java"/>
+  <installed facet="jst.jaxrs" version="1.1"/>
+  <installed facet="jst.java" version="17"/>
+  <installed facet="jst.web" version="2.5"/>
+</faceted-project>

@@ -1,0 +1,7 @@
+com\uax\plantilla\controller\model\Contacto.class
+com\uax\plantilla\dao\ContactoDAO.class
+com\uax\plantilla\controller\HomeController.class
+com\uax\plantilla\dao\ContactoDAOImpl.class
+com\uax\plantilla\service\ContactoServiceImpl.class
+com\uax\plantilla\util\HibernateConfiguration.class
+com\uax\plantilla\service\ContactoService.class

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EliDinamycWeb:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>EliDinamycWeb</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="EliDinamycWeb-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="EliDinamycWeb:war exploded" />
+    </root>
+  </artifact>
+</component>

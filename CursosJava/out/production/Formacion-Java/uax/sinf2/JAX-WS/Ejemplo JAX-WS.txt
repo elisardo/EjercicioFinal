@@ -1,0 +1,16 @@
+Ejemplo JAX-WS
+
+Aquí tenéis el ejemplo de JAX-WS.
+
+Acordaros de que el comando para el servidor es:
+
+javac es/informatica/ws/*.java
+
+wsgen -keep -cp . es.informatica.ws.HolaWSImpl
+
+
+Para el cliente este es el comando
+
+wsimport -keep -p es.informatica.cliente hola.wsdl
+
+donde el hola.wsdl  puede sustituirse: http://localhost:9999/ws/hola?wsdl

@@ -1,0 +1,1 @@
+Persona{nombre='eli', peso=23.0, altura=123.0}

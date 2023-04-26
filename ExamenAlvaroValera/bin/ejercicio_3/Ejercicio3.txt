@@ -1,0 +1,11 @@
+a) Tipos de algoritmos:
+
+	Podemos emplear dos tipos de algoritmos:
+		- Ávidos.
+		- Dinámicos.
+	
+	Siempre que la solución al problema exista, el algoritmo dinámico nos genera una solución valida.
+	
+	Este problema emplea el mismo algoritmo que los de "cambios de moneda" en los que buscamos generar el importe
+	solicitado minimizando el numero de monedas devueltas.
+	

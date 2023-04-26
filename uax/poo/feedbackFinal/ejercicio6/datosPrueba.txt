@@ -1,0 +1,4 @@
+Persona{nombre='Elisardo', peso=100.0, altura=180.0}
+Persona{nombre='Maria', peso=65.0, altura=170.0}
+Persona{nombre='Maider', peso=55.0, altura=169.0}
+Persona{nombre='Imanol', peso=70.0, altura=175.0}

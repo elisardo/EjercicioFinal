@@ -1,0 +1,505 @@
+/***
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+    -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+    display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+
+
+body {
+    min-width: 1401px;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+
+}
+
+h2 {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+
+}
+h2:hover {
+
+    color: #44C0FE;
+
+}
+h6 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    width: 1110px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.titulo {
+    grid-column: 2;
+    grid-row: 1;
+
+
+}
+
+
+
+.socializda {
+    grid-row: 1;
+    grid-column: 1;
+    margin-right: auto;
+    display: block;
+    min-width: 100px;
+}
+
+.socialdcha {
+    grid-row: 1;
+    grid-column: 3;
+    margin-left: auto;
+    display: block;
+    min-width: 100px;
+
+}
+
+.socialdcha img {
+    margin: 15px;
+}
+
+.socializda img {
+    margin: 15px;
+}
+
+nav {
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 5.45455px;
+    text-transform: uppercase;
+    max-width: 750px;
+}
+
+nav a {
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+nav a:hover {
+    color: #44C0FE;
+}
+
+
+.banner {
+    max-height: 644px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    background-image: url('../img/18.svg');
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 132px;;
+}
+
+
+
+
+.principal {
+    
+
+    width: 670px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 140px;
+
+
+}
+
+.prin_img {
+  
+    min-height: 101px;
+    min-width: 101px;
+
+}
+
+.prin_text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+
+}
+
+.detalles {
+    margin-top: 5px;
+}
+
+.detalles h6 {
+    margin: 3px;
+    display: inline;
+
+}
+
+.detalles p {
+    margin: 3px;
+    display: inline;color: #FFFFFF;
+
+}
+
+.card {
+
+    transform: translateY(85px);
+    display: flex;
+    flex-direction: column;
+    height: 653px;
+    width: 349px;
+    border: 1px gray solid;
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+.card_img {
+    height: 158px;
+    width: 158px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.card h4 {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2B2B2B;
+
+}
+
+.card h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+
+
+    color: #000000;
+}
+
+.card p {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #2B2B2B;
+
+}
+
+
+.blog {
+    display: flex;
+    flex-direction: row;
+    width: 1110px;
+    height: 532px;
+    height: 532px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+}
+
+.blog-M {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    max-height: 532px;
+    height: 532px;
+
+}
+.blog-XL {
+    display: flex;
+    flex-direction: column;
+    width: 667px;
+    max-height: 532px;
+    height: 532px;
+}
+
+.blog-M img {
+    margin-top: 20px;
+    width: 380px;
+}
+
+.blog-XL img {
+    margin-bottom: 20px;
+    width: 667px;
+}
+
+.blog-M h2,
+.blog-XL h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    color: #000000;
+}
+
+.blog-M h6,
+.blog-XL h6 {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+.etiqueta {
+
+    max-width: 94px;
+    height: 33px;
+    width: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #F7F6F6;
+    padding: 5px;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-align: center;
+    
+
+}
+.social{
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social h3{
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #2B2B2B;
+    width: 100%; 
+    text-align: left; 
+    border-bottom: 1px solid #D8D8D8; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+
+}
+
+
+ .social h3 span { 
+    background:#fff; 
+    padding:0 10px; 
+    
+}
+
+
+.social_nets{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+    margin: 70px 0 70px 0;
+}
+
+.social_nets img{
+    width: auto;
+}
+
+.footer{
+    border-top: 1px solid #D8D8D8; 
+    line-height: 0.1em;
+   
+    width: 1110px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer nav{
+    display:block;
+    position: relative;
+    margin:0px;
+    margin-bottom: 30px;
+    margin-top:10px;
+}
+    
+.footer nav a{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height, or 156% */
+    margin:10px;
+    margin-left:0px;
+   
+    padding:0px;
+    
+    margin-top:40px;
+    
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: left;
+    
+    color: rgba(0, 0, 0, 0.216882);
+}

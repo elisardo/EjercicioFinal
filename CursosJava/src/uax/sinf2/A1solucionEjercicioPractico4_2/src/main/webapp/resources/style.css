@@ -1,0 +1,86 @@
+
+
+	/*Lay-out*/
+
+	html {
+		margin: 0;
+		padding: 0;
+		background: #eee9df url(tile1.png) center top repeat;
+	}
+
+	body {
+		width: 940px;
+		margin: 0 auto;
+		font: 10pt/1.5em Helvetica,"Helvetica neue", Arial, sans-serif;
+	}
+
+	/*HTML 5 specific*/
+	header,section,article,aside,footer{
+		display: block;
+	}
+
+	aside{
+		float: left;
+		width: 470px;
+		min-height: 480px;
+		background: url(aside-bg.png) center top no-repeat;
+		margin: 0 0 20px 0;
+	}
+
+	section{
+		float: right;
+		width: 428px;
+		padding-left: 20px;
+		margin: 0 0 20px 0px;
+		border-left: 2px dotted #b2a497;
+
+	}
+
+	section h2 {
+		font: 14pt Helvetica,"Helvetica neue", Arial, sans-serif;
+		font-weight: lighter;
+		text-transform: uppercase;
+		color: #493831;
+		padding-bottom: 10px;
+		margin: 0;
+	}
+
+	footer{
+		clear:both !important;
+		width:940px;
+		height: 100px;
+		padding: 10px;
+		color:#200f08 ;
+		background:#ddd3bf;
+
+	}
+	/*Headings*/
+	h1 {
+		font: 32pt Helvetica,"Helvetica neue", Arial, sans-serif;
+		background: url(header-bg.png) center top no-repeat;
+		text-align: center;
+		text-transform: uppercase;
+		color: #e5b7ad;
+		padding-top: 30px ;
+		text-shadow: 1px 1px 2px #fff; 
+	}
+	p {
+		text-align: justify;
+	}
+
+	a:link, a:visited {
+		font:10pt normal Helvetica,"Helvetica neue", Arial, sans-serif;
+		color:#d2543c;
+		text-decoration:none;
+		border-bottom: 1px solid #d2543c;
+	}
+
+	a:hover {
+		border-bottom:1px dotted #d2543c;
+	}
+
+	a img {
+		border:none;
+	}
+	</style>
+	
